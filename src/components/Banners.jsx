@@ -23,7 +23,7 @@ const Banners = () => {
   // };
 
   return (
-    <div className="relative overflow-hidden w-full mt-20 h-60 flex flex-col justify-baseline">
+    <div className="relative overflow-hidden w-full mt-20 h-61 md:h-105 lg:h-fit flex flex-col justify-baseline">
       {/* <ChevronLeft
         color="black"
         className="absolute left-4 top-25 z-10 bg-white rounded-full"
@@ -48,7 +48,7 @@ const Banners = () => {
         onClick={nextSlide}
       /> */}
       {/* dots */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex gap-2">
         {banners.map((_, index) => (
           <div
             key={index}

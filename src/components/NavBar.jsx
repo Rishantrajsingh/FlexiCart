@@ -1,4 +1,4 @@
-import { Menu, X } from "lucide-react";
+import { Menu, Search, X } from "lucide-react";
 import logo from "../assets/images/logo.png";
 import { useState } from "react";
 import { HiSearch } from "react-icons/hi";
