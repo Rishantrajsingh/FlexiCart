@@ -23,7 +23,7 @@ const Banners = () => {
   // };
 
   return (
-    <div className="relative overflow-hidden w-full mt-20 h-61 md:h-105 lg:h-fit flex flex-col justify-baseline">
+    <div className="relative overflow-hidden w-full mt-20 h-61 md:h-105 flex flex-col justify-baseline">
       {/* <ChevronLeft
         color="black"
         className="absolute left-4 top-25 z-10 bg-white rounded-full"
@@ -35,7 +35,7 @@ const Banners = () => {
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {banners.map((img, index) => (
-          <div key={index} className="w-full shrink-0 p-3">
+          <div key={index} className="w-full shrink-0 p-3 md:p-7">
             <div className="rounded-lg shadow-lg overflow-hidden">
               <img src={img} alt={`Banner ${index + 1}`} className="w-full" />
             </div>

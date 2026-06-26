@@ -26,18 +26,20 @@ const Categories = () => {
   ];
 
   return (
-    <div>
-      <h1 className="text-xl font-semibold ml-3">Category</h1>
-      <div className="flex overflow-x-auto scrollbar-hide gap-6 mt-4 px-3">
+    <div className="mt-5">
+      <h1 className="text-xl md:text-2xl font-semibold ml-3 md:ml-7">
+        Category
+      </h1>
+      <div className="flex overflow-x-auto scrollbar-hide gap-6 mt-4 md:mt-8 px-3 md:px-7">
         {categories.map((category) => {
           const Icon = category.icon;
 
           return (
             <div key={category.id} className="flex flex-col items-center">
-              <div className="bg-[#fff2df] rounded-full w-fit p-3">
+              <div className="bg-[#fff2df] rounded-full w-fit p-3 md:p-7">
                 <Icon size={50} color="#656941" />
               </div>
-              <p className="text-sm mt-2">{category.name}</p>
+              <p className="text-sm md:text-lg mt-2 md:mt-4">{category.name}</p>
             </div>
           );
         })}
