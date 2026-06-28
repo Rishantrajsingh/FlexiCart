@@ -4,10 +4,17 @@ import Products from "../components/Products";
 
 const Home = () => {
   return (
-    <div>
+    <div className="h-full">
       <Banners />
       <Categories />
-      <Products />
+      <Products
+        title="Products For You"
+        endpoint="/products/category/mens-shirts"
+      />
+      <Products
+        title="Products For You"
+        endpoint="/products/category/mens-shirts"
+      />
     </div>
   );
 };

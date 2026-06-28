@@ -1,5 +1,7 @@
+import axios from "axios";
 import api from "./api";
 
-export const getAllProducts = () => {
-  return api.get("/products");
+export const getProducts = async (endpoint) => {
+  const res = await api.get(endpoint);
+  return res.data;
 };
