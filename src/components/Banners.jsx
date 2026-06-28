@@ -23,19 +23,20 @@ const Banners = () => {
   // };
 
   return (
-    <div className="relative overflow-hidden w-full mt-20 h-61 md:h-105 flex flex-col justify-baseline">
+    <div className="overflow-hidden w-full mt-20 h-fit flex flex-col items-center gap-2 pb-2">
       {/* <ChevronLeft
         color="black"
         className="absolute left-4 top-25 z-10 bg-white rounded-full"
         onClick={prevSlide}
       /> */}
+
       {/* slider */}
       <div
         className="flex transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {banners.map((img, index) => (
-          <div key={index} className="w-full shrink-0 p-3 md:p-7">
+          <div key={index} className="w-full shrink-0 p-3">
             <div className="rounded-lg shadow-lg overflow-hidden">
               <img src={img} alt={`Banner ${index + 1}`} className="w-full" />
             </div>
@@ -47,8 +48,9 @@ const Banners = () => {
         className="absolute right-4 top-25 z-10 bg-white rounded-full"
         onClick={nextSlide}
       /> */}
+
       {/* dots */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex gap-2">
+      <div className="flex gap-2">
         {banners.map((_, index) => (
           <div
             key={index}
